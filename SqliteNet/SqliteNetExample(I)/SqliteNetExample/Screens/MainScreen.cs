@@ -88,17 +88,7 @@ namespace SqliteNetExample
 
 	}
 
-	//Crear carpeta Models donde estaran los modelos de nuestra base de datos
-	//Crear clase customers, agreguar referencia a Sqlite;
-	//En la actividad principal, agregar referencia a Sqlite, SqliteNetExample.Models
-	//Creamos la carpeta Screens
-
-	//Creamos la Actividad llama MainScreen y la establecemos con actividad principal
-	//Creamos la clase de Application y colocamos ahi la creación de la base de datos y la tabla
-
-
-
-
+	
 }
 
 
