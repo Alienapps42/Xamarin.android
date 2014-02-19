@@ -69,7 +69,6 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <XamarinComponentReference Include="sqlite-net">
-      <InstallationInProgress>True</InstallationInProgress>
       <Version>1.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

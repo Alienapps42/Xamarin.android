@@ -4,10 +4,12 @@ Actividad principal de la aplicación
 Autor: Hugo Gómez Arenas
 Email: hugo.gomeza@outlook.com
 http://xamurais.com
+http://hugox.me/
 */
 
 
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using Android.App;
@@ -60,10 +62,19 @@ namespace SqliteNetExample
 
 		//Crea la conexión con la base de datos
 		private void LoadConnection()
-		{
-			string folder = System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal);
-			string dbPath = System.IO.Path.Combine (folder, "bussines2.db");
+		{			string folder = System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal);
+			string dbPath = System.IO.Path.Combine (folder, "bussines3.db");
+
+			bool exist = File.Exists (dbPath);
 			db = new SQLiteConnection (dbPath);
+
+			if (!exist) {
+				//Crea la tabla en base al modelo si es la primera vez
+				db.CreateTable<Customer> ();
+			}
+				
+
+
 		}
 
 		//Para mostrar en la lista los registros ya almacenados
@@ -88,7 +99,17 @@ namespace SqliteNetExample
 
 	}
 
-	
+	//Crear carpeta Models donde estaran los modelos de nuestra base de datos
+	//Crear clase customers, agreguar referencia a Sqlite;
+	//En la actividad principal, agregar referencia a Sqlite, SqliteNetExample.Models
+	//Creamos la carpeta Screens
+
+	//Creamos la Actividad llama MainScreen y la establecemos con actividad principal
+	//Creamos la clase de Application y colocamos ahi la creación de la base de datos y la tabla
+
+
+
+
 }
 
 
