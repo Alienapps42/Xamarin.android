@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.4df7013f0a853075" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarin_DropBox_DataStore\EditarContacto.cs">
+    <Files>
+      <File FileName="Xamarin_DropBox_DataStore\EditarContacto.cs" Line="13" Column="27" />
+      <File FileName="Xamarin_DropBox_DataStore\ListaContactos.cs" Line="59" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Xamarin__DropBox__DataStore MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+</Properties>

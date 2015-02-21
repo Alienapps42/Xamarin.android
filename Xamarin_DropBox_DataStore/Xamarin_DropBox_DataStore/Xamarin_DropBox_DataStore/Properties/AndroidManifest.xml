@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Xamarin_DropBox_DataStore.Xamarin_DropBox_DataStore">
+	<uses-sdk />
+
+
+	<!--PERMISOS DE NUESTRA APP-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<application android:label="@string/app_name">
+	<!--AGREGAMOS LA ACTIVIDAD QUE NOS PERMITIRA INICIAR SESION EN DROPBOX Y EL SERVICIO-->
+		<activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
+		<activity
+	  		android:name="com.dropbox.client2.android.AuthActivity"
+	  		android:launchMode="singleTask" >
+	  		<intent-filter>
+	    		<data android:scheme="db-2w9i0dhge5aa8mv" />
+	    		<action android:name="android.intent.action.VIEW" />
+	    		<category android:name="android.intent.category.BROWSABLE" />
+	    		<category android:name="android.intent.category.DEFAULT" />
+	  		</intent-filter>
+		</activity>
+
+		<service
+	  		android:name="com.dropbox.sync.android.DbxSyncService"
+	  		android:enabled="true"
+	  		android:exported="false"
+	  		android:label="Dropbox Sync" />
+
+	</application>
+</manifest>
